@@ -1,8 +1,8 @@
 | CS-665       | Software Design & Patterns |
-| ------------ | -------------------------- |
+| ------------ |----------------------------|
 | Name         | ROHINI GUDIMETLA           |
 | Date         | 03/20/2024                 |
-| Course       | Spring     |
+| Course       | Spring                     |
 | Assignment # | 4                          |
 
 # Assignment Overview
@@ -57,7 +57,6 @@ mvn compile
 
 ```bash
 java -jar target/JavaProjectTemplate-1.0-SNAPSHOT.jar
-
 ```
 
 ## JUnit Tests
