@@ -24,7 +24,7 @@ public class SystemAdapter implements CustomerData_USB {
     }
 
     @Override
-    public void updateCustomer_USB(int customerId, Customer customer) {
-        newSystem.updateCustomer_HTTPS(customerId, customer);
+    public String updateCustomer_USB(int customerId, Customer customer) {
+        return newSystem.updateCustomer_HTTPS(customerId, customer);
     }
 }

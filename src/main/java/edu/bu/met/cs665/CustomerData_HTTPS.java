@@ -13,5 +13,5 @@ public interface CustomerData_HTTPS {
     String printCustomer(int customerId);
     Customer getCustomer_HTTPS(int customerId);
     String createCustomer_HTTPS(Customer customer);
-    void updateCustomer_HTTPS(int customerId, Customer customer);
+    String updateCustomer_HTTPS(int customerId, Customer customer);
 }

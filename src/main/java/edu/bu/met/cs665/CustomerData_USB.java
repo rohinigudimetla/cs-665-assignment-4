@@ -13,5 +13,5 @@ public interface CustomerData_USB {
     String printCustomer(int customerId);
     Customer getCustomer_USB(int customerId);
     String createCustomer_USB(Customer customer);
-    void updateCustomer_USB(int customerId, Customer customer);
+    String updateCustomer_USB(int customerId, Customer customer);
 }

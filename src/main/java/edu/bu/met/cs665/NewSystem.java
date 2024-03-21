@@ -3,37 +3,37 @@ package edu.bu.met.cs665;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LegacySystem implements CustomerData_USB {
+public class NewSystem implements CustomerData_HTTPS {
     private Map<Integer, Customer> customers = new HashMap<>();
 
     @Override
     public String printCustomer(int customerId) {
         if (customers.containsKey(customerId)) {
             Customer customer = customers.get(customerId);
-            return "Legacy System Customer: " + customer.getName();
+            return "New System Customer: " + customer.getName();
         } else {
-            return "Customer not found in Legacy System.";
+            return "Customer not found in New System.";
         }
     }
 
     @Override
-    public Customer getCustomer_USB(int customerId) {
+    public Customer getCustomer_HTTPS(int customerId) {
         return customers.get(customerId);
     }
 
     @Override
-    public String createCustomer_USB(Customer customer) {
+    public String createCustomer_HTTPS(Customer customer) {
         customers.put(customer.getId(), customer);
-        return "Customer created in Legacy System: " + customer.getName();
+        return "Customer created in New System: " + customer.getName();
     }
 
     @Override
-    public String updateCustomer_USB(int customerId, Customer customer) {
+    public String updateCustomer_HTTPS(int customerId, Customer customer) {
         if (customers.containsKey(customerId)) {
             customers.put(customerId, customer);
-            return "Customer updated in Legacy System: " + customer.getName();
+            return "Customer updated in New System: " + customer.getName();
         } else {
-            return "Customer not found in Legacy System.";
+            return "Customer not found in New System.";
         }
     }
 }

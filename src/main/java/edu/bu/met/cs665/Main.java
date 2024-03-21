@@ -8,31 +8,43 @@
 
 package edu.bu.met.cs665;
 
-import edu.bu.met.cs665.example1.Person;
+import edu.bu.met.cs665.LegacySystem;
+import edu.bu.met.cs665.SystemAdapter;
+import edu.bu.met.cs665.Customer;
+import edu.bu.met.cs665.NewSystem;
+
+//import edu.bu.met.cs665.example1.Person;
 
 /**
  * This is the Main class.
  */
+
+
 public class Main {
-
-  /**
-   * A main method to run examples.
-   * You may use this method for development purposes as you start building your
-   * assignments/final project.  This could prove convenient to test as you are developing.
-   * However, please note that every assignment/final projects requires JUnit tests.
-   */
   public static void main(String[] args) {
-    System.out.println("This is a test message from the Main class (Main.java file)");
-  }
+    // Create a NewSystem and a SystemAdapter
+    NewSystem newSystem = new NewSystem();
+    SystemAdapter adapter = new SystemAdapter(newSystem);
 
-  /**
-   * This method performs XYZ and returns String.
-   *
-   * @return String
-   */
-  private String doIt() {
-    Person student = new Person("John", "Doe");
-    return student.getLastName() + ',' + student.getFirstName();
-  }
+    // Create a Customer
+    Customer customer = new Customer(1, "Lightning McQueen", "mcqueen@pixar.com");
 
+    // Use the adapter to create the customer in the new system
+    String createMessage = adapter.createCustomer_USB(customer);
+    System.out.println(createMessage);  // Should print "Customer created in New System: John Doe"
+
+    // Use the adapter to print the customer
+    String printMessage = adapter.printCustomer(customer.getId());
+    System.out.println(printMessage);  // Should print "New System Customer: John Doe"
+
+    // Update the customer's email
+    customer.setEmail("lightningmcqueen@pixar.com");
+    String updateMessage = adapter.updateCustomer_USB(customer.getId(), customer);
+    System.out.println(updateMessage);  // Should print "Customer updated in New System: John Doe"
+
+    // Print more details about the customer
+    System.out.println("Customer ID: " + customer.getId());
+    System.out.println("Customer Name: " + customer.getName());
+    System.out.println("Customer Email: " + customer.getEmail());
+  }
 }
