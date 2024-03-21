@@ -2,7 +2,7 @@
 | ------------ | -------------------------- |
 | Name         | ROHINI GUDIMETLA           |
 | Date         | 03/20/2024                 |
-| Course       | Fall / Spring / Summer     |
+| Course       | Spring     |
 | Assignment # | 4                          |
 
 # Assignment Overview
@@ -19,7 +19,6 @@ https://github.com/rohinigudimetla/cs-665-assignment-4.git
 
 # Implementation Description
 
-For each assignment, please answer the following:
 
 - The implementation is very flexible because of the Adapter pattern. If we introduce new customer data interfaces, for example, a system that communicates via bluetooth, we can create an interface and the cooresponding adapter class so that it delegates the method calls to the appropriate system.
 - The code is simple and easy to understand. Each class and interface has a single responsibility. The Customer class represents a customer, the CustomerData_USB and CustomerData_HTTPS interfaces define operations for managing customers, and the SystemAdapter class adapts the NewSystem to the CustomerData_USB interface.
