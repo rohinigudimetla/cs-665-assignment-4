@@ -11,7 +11,7 @@
 
 This assignment demonstrates the use of the Adapter design pattern to enable interaction between a legacy system and a new system. The legacy system uses a USB protocol to manage customer data, while the new system uses an HTTPS protocol.
 
-The Adapter design pattern is implemented through a `SystemAdapter` class. This allows the legacy system to interact with the new system without any modifications to the existing codebase. Specific implementations for the `CustomerData_USB` and `CustomerData_HTTPS` interfaces have been created, and the functionality of the `SystemAdapter` class has been tested.
+The Adapter design pattern is implemented through a SystemAdapter class. This allows the legacy system to interact with the new system without any modifications to the existing codebase. Specific implementations for the CustomerData_USB and CustomerData_HTTPS interfaces have been created, and the functionality of the SystemAdapter class has been tested.
 
 # GitHub Repository Link:
 
