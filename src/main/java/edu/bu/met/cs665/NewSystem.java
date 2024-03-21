@@ -3,7 +3,7 @@
  * Course: CS-665 Software Designs & Patterns
  * Date: 03/21/2024
  * File Name: NewSystem.java
- * Description: This class represents a new system that implements the CustomerData_HTTPS interface. 
+ * Description: This is the new system class that implements the CustomerData_HTTPS interface.
  * It provides methods to create, retrieve, and update customers using HTTPS protocol.
  */
 

@@ -3,7 +3,7 @@
  * Course: CS-665 Software Designs & Patterns
  * Date: 03/21/2024
  * File Name: LegacySystem.java
- * Description: This class represents a legacy system that implements the CustomerData_USB interface. 
+ * Description: This is the legacy system class that implements the CustomerData_USB interface.
  * It provides methods to create, retrieve, and print customers using USB protocol.
  */
 
