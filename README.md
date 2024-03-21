@@ -1,8 +1,8 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
+| Name         | ROHINI GUDIMETLA           |
+| Date         | 03/20/2024                 |
 | Course       | Fall / Spring / Summer     |
 | Assignment # |                            |
 
