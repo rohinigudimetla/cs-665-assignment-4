@@ -1,9 +1,10 @@
 /**
- * Name: FIRST_NAME LAST_NAME
+ * Name: ROHINI GUDIMETLA
  * Course: CS-665 Software Designs & Patterns
- * Date: MM/DD/YYYY
- * File Name: Main.java
- * Description: Write a description for this class
+ * Date: 03/21/2024
+ * File Name: CustomerData_USB.java
+ * Description: This interface defines the operations that a legacy system can perform on customer data using USB protocol, 
+ * including printing, retrieving, creating, and updating customers.
  */
 
 package edu.bu.met.cs665;

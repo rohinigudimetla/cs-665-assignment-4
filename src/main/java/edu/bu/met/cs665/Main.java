@@ -1,9 +1,10 @@
 /**
- * Name: FIRST_NAME LAST_NAME
+ * Name: ROHINI GUDIMETLA
  * Course: CS-665 Software Designs & Patterns
- * Date: MM/DD/YYYY
+ * Date: 03/21/2024
  * File Name: Main.java
- * Description: Write a description for this class
+ * Description: This is the main class and it shows an example of a customer Lightening McQueen
+ *  being created in the new system using the adapter pattern.
  */
 
 package edu.bu.met.cs665;
@@ -13,36 +14,31 @@ import edu.bu.met.cs665.SystemAdapter;
 import edu.bu.met.cs665.Customer;
 import edu.bu.met.cs665.NewSystem;
 
-//import edu.bu.met.cs665.example1.Person;
-
-/**
- * This is the Main class.
- */
-
+// import edu.bu.met.cs665.example1.Person;
 
 public class Main {
   public static void main(String[] args) {
-    // Create a NewSystem and a SystemAdapter
+    // create a NewSystem and a SystemAdapter
     NewSystem newSystem = new NewSystem();
     SystemAdapter adapter = new SystemAdapter(newSystem);
 
-    // Create a Customer
+    // create a Customer
     Customer customer = new Customer(1, "Lightning McQueen", "mcqueen@pixar.com");
 
-    // Use the adapter to create the customer in the new system
+    // use the adapter to create the customer in the new system
     String createMessage = adapter.createCustomer_USB(customer);
-    System.out.println(createMessage);  // Should print "Customer created in New System: John Doe"
+    System.out.println(createMessage);  // this should print "Customer created in New System: Lightning McQueen"
 
-    // Use the adapter to print the customer
+    // use the adapter to print the customer
     String printMessage = adapter.printCustomer(customer.getId());
-    System.out.println(printMessage);  // Should print "New System Customer: John Doe"
+    System.out.println(printMessage);  // this should print "New System Customer: Lightning McQueen"
 
-    // Update the customer's email
+    // update the customer's email
     customer.setEmail("lightningmcqueen@pixar.com");
     String updateMessage = adapter.updateCustomer_USB(customer.getId(), customer);
-    System.out.println(updateMessage);  // Should print "Customer updated in New System: John Doe"
+    System.out.println(updateMessage);  // this should print "Customer updated in New System: Lightning McQueen"
 
-    // Print more details about the customer
+    // print more details about the customer
     System.out.println("Customer ID: " + customer.getId());
     System.out.println("Customer Name: " + customer.getName());
     System.out.println("Customer Email: " + customer.getEmail());

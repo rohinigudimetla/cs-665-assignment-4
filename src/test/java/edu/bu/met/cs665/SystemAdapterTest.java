@@ -1,3 +1,12 @@
+/**
+ * Name: ROHINI GUDIMETLA
+ * Course: CS-665 Software Designs & Patterns
+ * Date: 03/21/2024
+ * File Name: SystemAdapterTest.java
+ * Description: This class contains unit tests for the SystemAdapter class. 
+ * It tests the functionality of retrieving and printing customer data through the adapter.
+ */
+
 package edu.bu.met.cs665;
 import org.junit.Before;
 import org.junit.Test;

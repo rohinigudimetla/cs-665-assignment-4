@@ -1,9 +1,10 @@
 /**
- * Name: FIRST_NAME LAST_NAME
+ * Name: ROHINI GUDIMETLA
  * Course: CS-665 Software Designs & Patterns
- * Date: MM/DD/YYYY
- * File Name: Main.java
- * Description: Write a description for this class
+ * Date: 03/21/2024
+ * File Name: Customer.java
+ * Description: This class represents a customer with properties id, name, and email. 
+ * It has a constructor to initialize these properties and getter and setter methods for each property.
  */
 
 package edu.bu.met.cs665;
